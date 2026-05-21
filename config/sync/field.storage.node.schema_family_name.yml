@@ -1,0 +1,21 @@
+uuid: 65aeadc6-e819-48bc-9a8f-b68fbb5dbea7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.schema_family_name
+field_name: schema_family_name
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

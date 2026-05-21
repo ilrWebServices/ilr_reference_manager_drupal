@@ -1,0 +1,19 @@
+uuid: f3b44f41-ab8e-42e9-b442-e573a9b1da18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_additional_name
+    - node.type.refman_schema_person
+id: node.refman_schema_person.schema_additional_name
+field_name: schema_additional_name
+entity_type: node
+bundle: refman_schema_person
+label: 'Middle name'
+description: 'An additional name for a Person, can be used for a middle name.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

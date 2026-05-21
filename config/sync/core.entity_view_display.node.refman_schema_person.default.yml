@@ -1,0 +1,46 @@
+uuid: f175e10b-0121-4934-891c-d27c6ddf1b70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.refman_schema_person.schema_additional_name
+    - field.field.node.refman_schema_person.schema_family_name
+    - field.field.node.refman_schema_person.schema_given_name
+    - node.type.refman_schema_person
+  module:
+    - user
+id: node.refman_schema_person.default
+targetEntityType: node
+bundle: refman_schema_person
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 200
+    region: content
+  schema_additional_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  schema_family_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  schema_given_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 110
+    region: content
+hidden: {  }

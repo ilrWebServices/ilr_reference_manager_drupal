@@ -1,0 +1,18 @@
+uuid: d81329b3-991b-434b-8ed8-9fd034794bd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.refman_schema_person
+id: node.refman_schema_person.title
+field_name: title
+entity_type: node
+bundle: refman_schema_person
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

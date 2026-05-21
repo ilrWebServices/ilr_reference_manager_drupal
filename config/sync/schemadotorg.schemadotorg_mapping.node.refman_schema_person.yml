@@ -1,0 +1,21 @@
+uuid: 5805905d-cd30-4c2a-9ee4-d6647e931dab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.refman_schema_person.schema_additional_name
+    - field.field.node.refman_schema_person.schema_family_name
+    - field.field.node.refman_schema_person.schema_given_name
+    - node.type.refman_schema_person
+  module:
+    - node
+id: node.refman_schema_person
+target_entity_type_id: node
+target_bundle: refman_schema_person
+schema_type: Person
+schema_properties:
+  schema_additional_name: additionalName
+  schema_family_name: familyName
+  schema_given_name: givenName
+  title: name
+additional_mappings: {  }

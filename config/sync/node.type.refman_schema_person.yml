@@ -1,0 +1,11 @@
+uuid: 43e63682-81b1-4dca-a8cc-a82274456452
+langcode: en
+status: true
+dependencies: {  }
+name: Person
+type: refman_schema_person
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false
