@@ -7,6 +7,7 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   field: 0
+  field_ui: 0
   file: 0
   filter: 0
   image: 0
@@ -20,6 +21,7 @@ module:
   path_alias: 0
   schemadotorg: 0
   schemadotorg_node: 0
+  schemadotorg_ui: 0
   sqlite: 0
   system: 0
   telephone: 0
