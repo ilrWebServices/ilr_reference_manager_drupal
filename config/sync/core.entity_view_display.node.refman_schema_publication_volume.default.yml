@@ -1,0 +1,28 @@
+uuid: ba88c619-8e49-4cf1-b038-50732e421aae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.refman_schema_publication_volume.schema_volume_number
+    - node.type.refman_schema_publication_volume
+  module:
+    - user
+id: node.refman_schema_publication_volume.default
+targetEntityType: node
+bundle: refman_schema_publication_volume
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 200
+    region: content
+  schema_volume_number:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 110
+    region: content
+hidden: {  }

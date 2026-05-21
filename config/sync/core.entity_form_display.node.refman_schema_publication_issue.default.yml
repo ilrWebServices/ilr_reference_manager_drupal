@@ -1,0 +1,64 @@
+uuid: cc17b07a-2b3b-4df3-ab46-e9b55f30a09a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.refman_schema_publication_issue.schema_is_part_of
+    - field.field.node.refman_schema_publication_issue.schema_issue_number
+    - node.type.refman_schema_publication_issue
+id: node.refman_schema_publication_issue.default
+targetEntityType: node
+bundle: refman_schema_publication_issue
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 200
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  schema_is_part_of:
+    type: entity_reference_autocomplete
+    weight: 160
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  schema_issue_number:
+    type: number
+    weight: 110
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 220
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 200
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

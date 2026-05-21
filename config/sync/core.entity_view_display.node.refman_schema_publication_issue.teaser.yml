@@ -1,0 +1,24 @@
+uuid: 0560a3bf-98d0-454e-b6de-46627c8a8f36
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.refman_schema_publication_issue.schema_is_part_of
+    - field.field.node.refman_schema_publication_issue.schema_issue_number
+    - node.type.refman_schema_publication_issue
+  module:
+    - user
+id: node.refman_schema_publication_issue.teaser
+targetEntityType: node
+bundle: refman_schema_publication_issue
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 200
+    region: content
+hidden:
+  schema_is_part_of: true
+  schema_issue_number: true

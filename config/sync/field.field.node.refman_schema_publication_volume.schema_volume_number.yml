@@ -1,0 +1,19 @@
+uuid: 4fab103f-a934-4e9c-96b5-fd0a58a62c39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_volume_number
+    - node.type.refman_schema_publication_volume
+id: node.refman_schema_publication_volume.schema_volume_number
+field_name: schema_volume_number
+entity_type: node
+bundle: refman_schema_publication_volume
+label: 'Volume number'
+description: 'Identifies the volume of publication or multi-part work; for example, "iii" or "2".'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

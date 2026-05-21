@@ -1,0 +1,17 @@
+uuid: 33a93537-fafa-46d7-871a-32f2d1cecbe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.refman_schema_publication_volume.schema_volume_number
+    - node.type.refman_schema_publication_volume
+  module:
+    - node
+id: node.refman_schema_publication_volume
+target_entity_type_id: node
+target_bundle: refman_schema_publication_volume
+schema_type: PublicationVolume
+schema_properties:
+  title: name
+  schema_volume_number: volumeNumber
+additional_mappings: {  }

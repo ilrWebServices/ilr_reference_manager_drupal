@@ -1,0 +1,11 @@
+uuid: fa68755c-c10b-4dca-b35b-450eb9ba3e7e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Publication Volume'
+type: refman_schema_publication_volume
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

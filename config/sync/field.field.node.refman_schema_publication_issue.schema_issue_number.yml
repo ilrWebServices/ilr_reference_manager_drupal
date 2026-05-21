@@ -1,0 +1,23 @@
+uuid: d3ea2f23-0d23-4229-911b-bb8b4fef8791
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_issue_number
+    - node.type.refman_schema_publication_issue
+id: node.refman_schema_publication_issue.schema_issue_number
+field_name: schema_issue_number
+entity_type: node
+bundle: refman_schema_publication_issue
+label: 'Issue number'
+description: 'Identifies the issue of publication; for example, "iii" or "2".'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,19 @@
+uuid: d376b789-a95f-4598-b177-24531048b210
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.refman_schema_publication_issue.schema_is_part_of
+    - field.field.node.refman_schema_publication_issue.schema_issue_number
+    - node.type.refman_schema_publication_issue
+  module:
+    - node
+id: node.refman_schema_publication_issue
+target_entity_type_id: node
+target_bundle: refman_schema_publication_issue
+schema_type: PublicationIssue
+schema_properties:
+  schema_is_part_of: isPartOf
+  schema_issue_number: issueNumber
+  title: name
+additional_mappings: {  }

@@ -1,0 +1,38 @@
+uuid: ba1b557e-3e83-42fa-9431-7747e27a49ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.refman_schema_publication_issue.schema_is_part_of
+    - field.field.node.refman_schema_publication_issue.schema_issue_number
+    - node.type.refman_schema_publication_issue
+  module:
+    - user
+id: node.refman_schema_publication_issue.default
+targetEntityType: node
+bundle: refman_schema_publication_issue
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 200
+    region: content
+  schema_is_part_of:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 160
+    region: content
+  schema_issue_number:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 110
+    region: content
+hidden: {  }
