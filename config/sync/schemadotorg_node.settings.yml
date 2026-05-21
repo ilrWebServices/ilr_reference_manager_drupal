@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: 6xQ8VDn6D0VVq4VeGNgxcYQK6Mflg-3VOUTFYjkM7d4
+menu_ui:
+  WebPage:
+    available_menus:
+      - main
+      - footer
+    parent: ''
+  Thing:
+    available_menus: {  }
+    parent: ''
+display_submitted:
+  Article: true
+  Thing: false
