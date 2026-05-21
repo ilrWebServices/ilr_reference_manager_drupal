@@ -1,0 +1,45 @@
+uuid: f4e0a5e9-c3cc-4dbf-8fa2-bfe9e2791e5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.refman_schema_organization
+id: node.refman_schema_organization.default
+targetEntityType: node
+bundle: refman_schema_organization
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 200
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 220
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 200
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

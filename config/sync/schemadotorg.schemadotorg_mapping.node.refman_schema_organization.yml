@@ -1,0 +1,15 @@
+uuid: fc2ff22d-3ed3-4e66-a134-233bd86d50eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.refman_schema_organization
+  module:
+    - node
+id: node.refman_schema_organization
+target_entity_type_id: node
+target_bundle: refman_schema_organization
+schema_type: Organization
+schema_properties:
+  title: name
+additional_mappings: {  }

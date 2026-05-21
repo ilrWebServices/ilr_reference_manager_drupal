@@ -1,0 +1,19 @@
+uuid: 270dbf4f-975a-41f4-b3cb-3794c795ea8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.refman_schema_organization
+  module:
+    - user
+id: node.refman_schema_organization.default
+targetEntityType: node
+bundle: refman_schema_organization
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 200
+    region: content
+hidden: {  }

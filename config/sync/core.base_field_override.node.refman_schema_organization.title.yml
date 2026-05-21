@@ -1,0 +1,18 @@
+uuid: 373dc49c-b3d2-41e8-8d3a-382888ff5098
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.refman_schema_organization
+id: node.refman_schema_organization.title
+field_name: title
+entity_type: node
+bundle: refman_schema_organization
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
