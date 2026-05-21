@@ -1,0 +1,28 @@
+uuid: 5dffd434-780a-4fc4-8325-d319ff67fead
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_publisher
+    - node.type.refman_schema_book
+id: node.refman_schema_book.schema_publisher
+field_name: schema_publisher
+entity_type: node
+bundle: refman_schema_book
+label: Publisher
+description: 'The publisher of the article in question.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'schemadotorg:node'
+  handler_settings:
+    target_type: node
+    schema_types:
+      Organization: Organization
+    excluded_schema_types: {  }
+    ignore_additional_mappings: false
+    target_bundles:
+      refman_schema_organization: refman_schema_organization
+field_type: entity_reference

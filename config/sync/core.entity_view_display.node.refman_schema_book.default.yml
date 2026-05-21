@@ -1,0 +1,62 @@
+uuid: 3e0c3d5d-3ede-44c0-a4ec-84dbaa78bde9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.refman_schema_book.schema_author
+    - field.field.node.refman_schema_book.schema_date_published
+    - field.field.node.refman_schema_book.schema_publisher
+    - field.field.node.refman_schema_book.schema_url
+    - node.type.refman_schema_book
+  module:
+    - datetime
+    - link
+    - user
+id: node.refman_schema_book.default
+targetEntityType: node
+bundle: refman_schema_book
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 200
+    region: content
+  schema_author:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  schema_date_published:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  schema_publisher:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 160
+    region: content
+  schema_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 141
+    region: content
+hidden: {  }

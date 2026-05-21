@@ -1,0 +1,11 @@
+uuid: 884ac0a4-76d5-448d-be3a-8b4c0c836e93
+langcode: en
+status: true
+dependencies: {  }
+name: Book
+type: refman_schema_book
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false
