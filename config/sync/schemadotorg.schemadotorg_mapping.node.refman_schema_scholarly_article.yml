@@ -1,0 +1,25 @@
+uuid: 0558e8ab-5cb0-4fe8-94cf-c71afa77f179
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.refman_schema_scholarly_article.schema_author
+    - field.field.node.refman_schema_scholarly_article.schema_date_published
+    - field.field.node.refman_schema_scholarly_article.schema_is_part_of
+    - field.field.node.refman_schema_scholarly_article.schema_publisher
+    - field.field.node.refman_schema_scholarly_article.schema_url
+    - node.type.refman_schema_scholarly_article
+  module:
+    - node
+id: node.refman_schema_scholarly_article
+target_entity_type_id: node
+target_bundle: refman_schema_scholarly_article
+schema_type: ScholarlyArticle
+schema_properties:
+  schema_author: author
+  schema_date_published: datePublished
+  schema_is_part_of: isPartOf
+  title: name
+  schema_publisher: publisher
+  schema_url: url
+additional_mappings: {  }

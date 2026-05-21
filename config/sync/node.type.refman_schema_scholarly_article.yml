@@ -1,0 +1,11 @@
+uuid: 11431d04-e8ca-4adc-8963-3904513fe629
+langcode: en
+status: true
+dependencies: {  }
+name: 'Scholarly Article'
+type: refman_schema_scholarly_article
+description: 'A scholarly article.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

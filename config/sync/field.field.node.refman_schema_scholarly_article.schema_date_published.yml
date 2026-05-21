@@ -1,0 +1,21 @@
+uuid: 63ced101-f51f-4195-b2f9-a2f1eb7d09d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_date_published
+    - node.type.refman_schema_scholarly_article
+  module:
+    - datetime
+id: node.refman_schema_scholarly_article.schema_date_published
+field_name: schema_date_published
+entity_type: node
+bundle: refman_schema_scholarly_article
+label: 'Date published'
+description: 'Date of first publication or broadcast.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

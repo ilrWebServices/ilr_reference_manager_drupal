@@ -1,0 +1,30 @@
+uuid: 41cdab7a-6954-4a37-8226-9c8761a9a3ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.refman_schema_scholarly_article.schema_author
+    - field.field.node.refman_schema_scholarly_article.schema_date_published
+    - field.field.node.refman_schema_scholarly_article.schema_is_part_of
+    - field.field.node.refman_schema_scholarly_article.schema_publisher
+    - field.field.node.refman_schema_scholarly_article.schema_url
+    - node.type.refman_schema_scholarly_article
+  module:
+    - user
+id: node.refman_schema_scholarly_article.teaser
+targetEntityType: node
+bundle: refman_schema_scholarly_article
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 200
+    region: content
+hidden:
+  schema_author: true
+  schema_date_published: true
+  schema_is_part_of: true
+  schema_publisher: true
+  schema_url: true

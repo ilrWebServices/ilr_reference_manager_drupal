@@ -1,0 +1,28 @@
+uuid: fc8f9a9f-8d4b-4543-97a2-4eb1d82106b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_is_part_of
+    - node.type.refman_schema_scholarly_article
+id: node.refman_schema_scholarly_article.schema_is_part_of
+field_name: schema_is_part_of
+entity_type: node
+bundle: refman_schema_scholarly_article
+label: 'Is part of'
+description: 'Indicates an item or CreativeWork that this item, or CreativeWork (in some sense), is part of.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'schemadotorg:node'
+  handler_settings:
+    target_type: node
+    schema_types:
+      PublicationIssue: PublicationIssue
+    excluded_schema_types: {  }
+    ignore_additional_mappings: true
+    target_bundles:
+      refman_schema_publication_issue: refman_schema_publication_issue
+field_type: entity_reference
