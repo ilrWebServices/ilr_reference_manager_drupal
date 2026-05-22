@@ -21,7 +21,7 @@ content:
     third_party_settings: {  }
   schema_additional_name:
     type: string_textfield
-    weight: 110
+    weight: 3
     region: content
     settings:
       size: 60
@@ -29,7 +29,7 @@ content:
     third_party_settings: {  }
   schema_family_name:
     type: string_textfield
-    weight: 110
+    weight: 1
     region: content
     settings:
       size: 60
@@ -37,7 +37,7 @@ content:
     third_party_settings: {  }
   schema_given_name:
     type: string_textfield
-    weight: 110
+    weight: 2
     region: content
     settings:
       size: 60
