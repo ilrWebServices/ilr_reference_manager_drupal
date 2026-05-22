@@ -1,0 +1,11 @@
+uuid: 0d9ca732-65f6-424b-a99e-218a80b2fb22
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.inline
+label: Inline
+description: 'Used when editing this content in inline reference forms.'
+targetEntityType: node
+cache: true
