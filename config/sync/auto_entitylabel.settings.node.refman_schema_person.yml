@@ -1,0 +1,10 @@
+status: 1
+pattern: '[node:schema_given_name] [node:schema_family_name] - inline'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.refman_schema_person
+new_content_behavior: 0
