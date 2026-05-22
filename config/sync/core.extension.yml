@@ -1,6 +1,7 @@
 _core:
   default_config_hash: 4GIX5Esnc_umpXUBj4IIocRX7Mt5fPhm4AgXfE3E56E
 module:
+  auto_entitylabel: -100
   block: 0
   contextual: 0
   datetime: 0
@@ -27,6 +28,7 @@ module:
   system: 0
   telephone: 0
   text: 0
+  token: 0
   update: 0
   user: 0
   views_ui: 0
