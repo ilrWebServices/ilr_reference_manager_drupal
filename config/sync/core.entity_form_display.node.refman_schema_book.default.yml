@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_form_mode.node.inline
     - field.field.node.refman_schema_book.schema_author
     - field.field.node.refman_schema_book.schema_date_published
     - field.field.node.refman_schema_book.schema_publisher
@@ -10,6 +11,7 @@ dependencies:
     - node.type.refman_schema_book
   module:
     - datetime
+    - inline_entity_form
     - link
 id: node.refman_schema_book.default
 targetEntityType: node
@@ -23,14 +25,17 @@ content:
     settings: {  }
     third_party_settings: {  }
   schema_author:
-    type: entity_reference_autocomplete
+    type: inline_entity_form_simple
     weight: 22
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      form_mode: inline
+      override_labels: true
+      label_singular: Author
+      label_plural: Authors
+      collapsible: false
+      collapsed: false
+      revision: true
     third_party_settings: {  }
   schema_date_published:
     type: datetime_default
