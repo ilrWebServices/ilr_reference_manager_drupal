@@ -2,7 +2,16 @@ uuid: 60aa0819-b4a5-4a1b-8237-439f954ac121
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.refman_schema_book
+    - node.type.refman_schema_organization
+    - node.type.refman_schema_person
+    - node.type.refman_schema_publication_issue
+    - node.type.refman_schema_publication_volume
+    - node.type.refman_schema_scholarly_article
   module:
+    - navigation
+    - node
     - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
@@ -12,3 +21,23 @@ weight: 1
 is_admin: false
 permissions:
   - 'access content'
+  - 'access navigation'
+  - 'create refman_schema_book content'
+  - 'create refman_schema_organization content'
+  - 'create refman_schema_person content'
+  - 'create refman_schema_publication_issue content'
+  - 'create refman_schema_publication_volume content'
+  - 'create refman_schema_scholarly_article content'
+  - 'delete own refman_schema_book content'
+  - 'delete own refman_schema_organization content'
+  - 'delete own refman_schema_person content'
+  - 'delete own refman_schema_publication_issue content'
+  - 'delete own refman_schema_publication_volume content'
+  - 'delete own refman_schema_scholarly_article content'
+  - 'edit own refman_schema_book content'
+  - 'edit own refman_schema_organization content'
+  - 'edit own refman_schema_person content'
+  - 'edit own refman_schema_publication_issue content'
+  - 'edit own refman_schema_publication_volume content'
+  - 'edit own refman_schema_scholarly_article content'
+  - 'view own unpublished content'
