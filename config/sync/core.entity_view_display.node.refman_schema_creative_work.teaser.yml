@@ -1,0 +1,28 @@
+uuid: 1d87d0b1-356c-47f2-9efb-8e302ea75fb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.refman_schema_creative_work.schema_author
+    - field.field.node.refman_schema_creative_work.schema_date_published
+    - field.field.node.refman_schema_creative_work.schema_publisher
+    - field.field.node.refman_schema_creative_work.schema_url
+    - node.type.refman_schema_creative_work
+  module:
+    - user
+id: node.refman_schema_creative_work.teaser
+targetEntityType: node
+bundle: refman_schema_creative_work
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 200
+    region: content
+hidden:
+  schema_author: true
+  schema_date_published: true
+  schema_publisher: true
+  schema_url: true

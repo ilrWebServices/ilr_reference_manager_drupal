@@ -1,0 +1,11 @@
+uuid: 2b03c27c-d542-4cb7-af51-bc51abf8d84d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Other Creative Work'
+type: refman_schema_creative_work
+description: 'A generic creative work, not covered by Articles, Books, etc.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

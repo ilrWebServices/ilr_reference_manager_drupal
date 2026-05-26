@@ -1,0 +1,28 @@
+uuid: d295a5af-6b6d-4296-be1b-7b10d14efc5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_author
+    - node.type.refman_schema_creative_work
+id: node.refman_schema_creative_work.schema_author
+field_name: schema_author
+entity_type: node
+bundle: refman_schema_creative_work
+label: Authors
+description: 'The author of this content or rating.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'schemadotorg:node'
+  handler_settings:
+    target_type: node
+    schema_types:
+      Person: Person
+    excluded_schema_types: {  }
+    ignore_additional_mappings: false
+    target_bundles:
+      refman_schema_person: refman_schema_person
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 274590cf-967f-4aa0-8e4f-95a8b315d05f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.refman_schema_creative_work.schema_author
+    - field.field.node.refman_schema_creative_work.schema_date_published
+    - field.field.node.refman_schema_creative_work.schema_publisher
+    - field.field.node.refman_schema_creative_work.schema_url
+    - node.type.refman_schema_creative_work
+  module:
+    - node
+id: node.refman_schema_creative_work
+target_entity_type_id: node
+target_bundle: refman_schema_creative_work
+schema_type: CreativeWork
+schema_properties:
+  schema_author: author
+  schema_date_published: datePublished
+  title: name
+  schema_publisher: publisher
+  schema_url: url
+additional_mappings: {  }
