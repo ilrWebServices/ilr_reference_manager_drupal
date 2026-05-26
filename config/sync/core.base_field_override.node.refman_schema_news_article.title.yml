@@ -1,0 +1,18 @@
+uuid: 609c5f26-b97f-4448-9a8e-60cdcdad6f6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.refman_schema_news_article
+id: node.refman_schema_news_article.title
+field_name: title
+entity_type: node
+bundle: refman_schema_news_article
+label: Headline
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

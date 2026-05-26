@@ -5,6 +5,7 @@ dependencies:
   config:
     - node.type.refman_schema_book
     - node.type.refman_schema_chapter
+    - node.type.refman_schema_news_article
     - node.type.refman_schema_organization
     - node.type.refman_schema_person
     - node.type.refman_schema_publication_issue
@@ -25,6 +26,7 @@ permissions:
   - 'access navigation'
   - 'create refman_schema_book content'
   - 'create refman_schema_chapter content'
+  - 'create refman_schema_news_article content'
   - 'create refman_schema_organization content'
   - 'create refman_schema_person content'
   - 'create refman_schema_publication_issue content'
@@ -32,6 +34,7 @@ permissions:
   - 'create refman_schema_scholarly_article content'
   - 'delete own refman_schema_book content'
   - 'delete own refman_schema_chapter content'
+  - 'delete own refman_schema_news_article content'
   - 'delete own refman_schema_organization content'
   - 'delete own refman_schema_person content'
   - 'delete own refman_schema_publication_issue content'
@@ -39,6 +42,7 @@ permissions:
   - 'delete own refman_schema_scholarly_article content'
   - 'edit own refman_schema_book content'
   - 'edit own refman_schema_chapter content'
+  - 'edit own refman_schema_news_article content'
   - 'edit own refman_schema_organization content'
   - 'edit own refman_schema_person content'
   - 'edit own refman_schema_publication_issue content'

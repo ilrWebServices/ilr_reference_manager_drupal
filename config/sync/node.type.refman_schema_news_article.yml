@@ -1,0 +1,11 @@
+uuid: 6b3069c1-2402-4c08-8a3c-d35d529fb58e
+langcode: en
+status: true
+dependencies: {  }
+name: 'News Article'
+type: refman_schema_news_article
+description: 'A NewsArticle is an article whose content reports news, or provides background context and supporting materials for understanding the news.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

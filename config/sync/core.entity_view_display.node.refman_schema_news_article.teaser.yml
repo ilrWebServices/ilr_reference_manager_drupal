@@ -1,0 +1,28 @@
+uuid: a7ecdd43-cc18-4c65-b453-89d8fd447cad
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.refman_schema_news_article.schema_author
+    - field.field.node.refman_schema_news_article.schema_date_published
+    - field.field.node.refman_schema_news_article.schema_publisher
+    - field.field.node.refman_schema_news_article.schema_url
+    - node.type.refman_schema_news_article
+  module:
+    - user
+id: node.refman_schema_news_article.teaser
+targetEntityType: node
+bundle: refman_schema_news_article
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 200
+    region: content
+hidden:
+  schema_author: true
+  schema_date_published: true
+  schema_publisher: true
+  schema_url: true

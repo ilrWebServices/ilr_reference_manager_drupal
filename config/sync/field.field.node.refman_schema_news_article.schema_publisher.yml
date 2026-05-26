@@ -1,0 +1,28 @@
+uuid: a3ee211b-98f3-47d6-8d66-3ee27b7b8cbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_publisher
+    - node.type.refman_schema_news_article
+id: node.refman_schema_news_article.schema_publisher
+field_name: schema_publisher
+entity_type: node
+bundle: refman_schema_news_article
+label: Publisher
+description: 'The publisher of the article in question.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'schemadotorg:node'
+  handler_settings:
+    target_type: node
+    schema_types:
+      Organization: Organization
+    excluded_schema_types: {  }
+    ignore_additional_mappings: false
+    target_bundles:
+      refman_schema_organization: refman_schema_organization
+field_type: entity_reference
