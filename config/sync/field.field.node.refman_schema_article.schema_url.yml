@@ -1,0 +1,23 @@
+uuid: 70c280ad-4054-4d4e-84cb-2c89a67e3c8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_url
+    - node.type.refman_schema_article
+  module:
+    - link
+id: node.refman_schema_article.schema_url
+field_name: schema_url
+entity_type: node
+bundle: refman_schema_article
+label: URL
+description: 'URL of the item.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

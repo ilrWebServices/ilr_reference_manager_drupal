@@ -1,0 +1,18 @@
+uuid: a3f496eb-6479-4517-9eb8-7fa3f25304a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.refman_schema_article
+id: node.refman_schema_article.title
+field_name: title
+entity_type: node
+bundle: refman_schema_article
+label: Headline
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
