@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 name: Organization
 type: refman_schema_organization
-description: null
+description: 'An organization such as a school, NGO, corporation, club, etc.'
 help: null
 new_revision: true
 preview_mode: 1

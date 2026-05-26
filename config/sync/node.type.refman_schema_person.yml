@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 name: Person
 type: refman_schema_person
-description: null
+description: 'A Person.'
 help: null
 new_revision: true
 preview_mode: 1
