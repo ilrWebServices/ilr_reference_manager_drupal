@@ -13,12 +13,6 @@ targetEntityType: node
 bundle: refman_schema_person
 mode: inline
 content:
-  created:
-    type: datetime_timestamp
-    weight: 200
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   schema_additional_name:
     type: string_textfield
     weight: 3
@@ -43,13 +37,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    weight: 220
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   title:
     type: string_textfield
     weight: -5
@@ -58,16 +45,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 200
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
 hidden:
+  created: true
   promote: true
+  status: true
   sticky: true
+  uid: true
