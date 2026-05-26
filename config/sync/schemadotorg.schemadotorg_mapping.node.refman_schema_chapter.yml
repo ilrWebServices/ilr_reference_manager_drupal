@@ -1,0 +1,23 @@
+uuid: bbe15905-0019-4836-afd3-7f961847da87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.refman_schema_chapter.schema_author
+    - field.field.node.refman_schema_chapter.schema_date_published
+    - field.field.node.refman_schema_chapter.schema_publisher
+    - field.field.node.refman_schema_chapter.schema_url
+    - node.type.refman_schema_chapter
+  module:
+    - node
+id: node.refman_schema_chapter
+target_entity_type_id: node
+target_bundle: refman_schema_chapter
+schema_type: Chapter
+schema_properties:
+  schema_author: author
+  schema_date_published: datePublished
+  title: name
+  schema_publisher: publisher
+  schema_url: url
+additional_mappings: {  }

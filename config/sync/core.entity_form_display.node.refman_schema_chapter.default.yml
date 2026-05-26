@@ -1,0 +1,94 @@
+uuid: a03a813b-f233-4a0e-b27a-ae8b83cf7402
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.inline
+    - field.field.node.refman_schema_chapter.schema_author
+    - field.field.node.refman_schema_chapter.schema_date_published
+    - field.field.node.refman_schema_chapter.schema_publisher
+    - field.field.node.refman_schema_chapter.schema_url
+    - node.type.refman_schema_chapter
+  module:
+    - datetime
+    - inline_entity_form
+    - link
+id: node.refman_schema_chapter.default
+targetEntityType: node
+bundle: refman_schema_chapter
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 200
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  schema_author:
+    type: inline_entity_form_simple
+    weight: 22
+    region: content
+    settings:
+      form_mode: inline
+      override_labels: true
+      label_singular: Author
+      label_plural: Authors
+      collapsible: false
+      collapsed: false
+      revision: true
+    third_party_settings: {  }
+  schema_date_published:
+    type: datetime_default
+    weight: 111
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  schema_publisher:
+    type: inline_entity_form_simple
+    weight: 160
+    region: content
+    settings:
+      form_mode: inline
+      override_labels: true
+      label_singular: Publisher
+      label_plural: Publishers
+      collapsible: false
+      collapsed: false
+      revision: true
+    third_party_settings: {  }
+  schema_url:
+    type: link_default
+    weight: 141
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 220
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 200
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

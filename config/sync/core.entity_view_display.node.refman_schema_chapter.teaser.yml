@@ -1,0 +1,28 @@
+uuid: 3aa1c652-0a66-498e-8e16-d22a6178f91f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.refman_schema_chapter.schema_author
+    - field.field.node.refman_schema_chapter.schema_date_published
+    - field.field.node.refman_schema_chapter.schema_publisher
+    - field.field.node.refman_schema_chapter.schema_url
+    - node.type.refman_schema_chapter
+  module:
+    - user
+id: node.refman_schema_chapter.teaser
+targetEntityType: node
+bundle: refman_schema_chapter
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 200
+    region: content
+hidden:
+  schema_author: true
+  schema_date_published: true
+  schema_publisher: true
+  schema_url: true

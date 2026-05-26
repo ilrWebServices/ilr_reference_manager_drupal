@@ -1,0 +1,11 @@
+uuid: 2fe3e7d8-a067-40d6-a88e-03d5c7459380
+langcode: en
+status: true
+dependencies: {  }
+name: 'Book Chapter'
+type: refman_schema_chapter
+description: 'One of the sections into which a book is divided.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false
