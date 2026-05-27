@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.node.schema_is_part_of
     - node.type.refman_schema_scholarly_article
+  module:
+    - entity_reference_revisions
 id: node.refman_schema_scholarly_article.schema_is_part_of
 field_name: schema_is_part_of
 entity_type: node
@@ -25,4 +27,4 @@ settings:
     ignore_additional_mappings: true
     target_bundles:
       refman_schema_publication_issue: refman_schema_publication_issue
-field_type: entity_reference
+field_type: entity_reference_revisions

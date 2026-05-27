@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.node.schema_author
     - node.type.refman_schema_scholarly_article
+  module:
+    - entity_reference_revisions
 id: node.refman_schema_scholarly_article.schema_author
 field_name: schema_author
 entity_type: node
@@ -25,4 +27,4 @@ settings:
     ignore_additional_mappings: false
     target_bundles:
       refman_schema_person: refman_schema_person
-field_type: entity_reference
+field_type: entity_reference_revisions

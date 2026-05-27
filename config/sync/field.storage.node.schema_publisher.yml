@@ -3,14 +3,15 @@ langcode: en
 status: true
 dependencies:
   module:
+    - entity_reference_revisions
     - node
 id: node.schema_publisher
 field_name: schema_publisher
 entity_type: node
-type: entity_reference
+type: entity_reference_revisions
 settings:
   target_type: node
-module: core
+module: entity_reference_revisions
 locked: false
 cardinality: 1
 translatable: true
