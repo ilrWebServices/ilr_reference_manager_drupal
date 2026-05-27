@@ -1,0 +1,10 @@
+status: 1
+pattern: 'Issue [random:number]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.refman_schema_publication_issue
+new_content_behavior: 0
