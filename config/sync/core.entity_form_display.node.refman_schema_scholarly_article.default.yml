@@ -59,7 +59,7 @@ content:
     third_party_settings: {  }
   schema_publisher:
     type: inline_entity_form_simple
-    weight: 160
+    weight: 150
     region: content
     settings:
       form_mode: inline
