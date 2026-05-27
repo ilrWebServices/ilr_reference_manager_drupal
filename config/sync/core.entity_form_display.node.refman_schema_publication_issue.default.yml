@@ -3,9 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_form_mode.node.inline
     - field.field.node.refman_schema_publication_issue.schema_is_part_of
     - field.field.node.refman_schema_publication_issue.schema_issue_number
     - node.type.refman_schema_publication_issue
+  module:
+    - inline_entity_form
 id: node.refman_schema_publication_issue.default
 targetEntityType: node
 bundle: refman_schema_publication_issue
@@ -18,14 +21,17 @@ content:
     settings: {  }
     third_party_settings: {  }
   schema_is_part_of:
-    type: entity_reference_autocomplete
+    type: inline_entity_form_simple
     weight: 160
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      form_mode: inline
+      override_labels: true
+      label_singular: Volume
+      label_plural: Volumes
+      collapsible: false
+      collapsed: false
+      revision: true
     third_party_settings: {  }
   schema_issue_number:
     type: number

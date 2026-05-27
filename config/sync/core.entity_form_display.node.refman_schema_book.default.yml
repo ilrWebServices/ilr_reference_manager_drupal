@@ -44,14 +44,17 @@ content:
     settings: {  }
     third_party_settings: {  }
   schema_publisher:
-    type: entity_reference_autocomplete
+    type: inline_entity_form_simple
     weight: 160
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      form_mode: inline
+      override_labels: true
+      label_singular: Publisher
+      label_plural: Publishers
+      collapsible: false
+      collapsed: false
+      revision: true
     third_party_settings: {  }
   schema_url:
     type: link_default
