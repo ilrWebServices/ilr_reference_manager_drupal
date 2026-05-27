@@ -11,7 +11,7 @@ id: node.refman_schema_publication_issue.schema_is_part_of
 field_name: schema_is_part_of
 entity_type: node
 bundle: refman_schema_publication_issue
-label: 'Is part of'
+label: Volume
 description: 'Indicates an item or CreativeWork that this item, or CreativeWork (in some sense), is part of.'
 required: false
 translatable: true
