@@ -22,6 +22,7 @@ module:
   options: 0
   page_cache: 0
   path_alias: 0
+  reference_manager: 0
   schemadotorg: 0
   schemadotorg_node: 0
   schemadotorg_ui: 0
