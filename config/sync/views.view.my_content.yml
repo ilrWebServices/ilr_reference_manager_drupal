@@ -3,7 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.refman_schema_article
     - node.type.refman_schema_book
+    - node.type.refman_schema_chapter
+    - node.type.refman_schema_creative_work
+    - node.type.refman_schema_news_article
     - node.type.refman_schema_organization
     - node.type.refman_schema_person
     - node.type.refman_schema_publication_issue
@@ -449,6 +453,10 @@ display:
           operator: in
           value:
             refman_schema_book: refman_schema_book
+            refman_schema_chapter: refman_schema_chapter
+            refman_schema_article: refman_schema_article
+            refman_schema_news_article: refman_schema_news_article
+            refman_schema_creative_work: refman_schema_creative_work
             refman_schema_scholarly_article: refman_schema_scholarly_article
           group: 1
           exposed: true
