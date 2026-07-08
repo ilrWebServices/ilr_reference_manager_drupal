@@ -1,4 +1,4 @@
-uuid: 28f9a409-71ca-4a7f-94f3-4cfddaaedf1e
+uuid: 430ae4c7-e553-4630-aaea-0d05019c16b8
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,11 @@ dependencies:
 id: node.schema_issue_number
 field_name: schema_issue_number
 entity_type: node
-type: integer
+type: string
 settings:
-  unsigned: false
-  size: normal
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1

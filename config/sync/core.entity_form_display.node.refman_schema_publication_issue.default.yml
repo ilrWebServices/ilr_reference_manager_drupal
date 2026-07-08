@@ -34,10 +34,11 @@ content:
       revision: true
     third_party_settings: {  }
   schema_issue_number:
-    type: number
+    type: string_textfield
     weight: 110
     region: content
     settings:
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   status:
