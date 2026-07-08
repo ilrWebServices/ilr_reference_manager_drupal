@@ -1189,8 +1189,8 @@ schema_properties:
     cookTime:
       granularity: 'h:i'
     courseMode:
-      label: 'Course modes'
       type: string
+      label: 'Course modes'
       unlimited: true
     coursePrerequisites:
       type: string
@@ -1457,8 +1457,8 @@ schema_properties:
     prepTime:
       granularity: 'h:i'
     primaryImageOfPage:
-      label: Image
       name: image
+      label: Image
     primaryPrevention:
       label: 'Primary preventions'
       unlimited: true
@@ -1496,8 +1496,8 @@ schema_properties:
       label: Ingredients
       unlimited: true
     recipeInstructions:
-      label: Instructions
       type: string_long
+      label: Instructions
       unlimited: true
     recipeYield:
       label: Yield
