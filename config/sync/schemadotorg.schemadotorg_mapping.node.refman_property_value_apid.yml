@@ -3,14 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.property_value_academic_id.schema_property_id_academic_id
-    - field.field.node.property_value_academic_id.schema_value_academic_id
-    - node.type.property_value_academic_id
+    - field.field.node.refman_property_value_apid.schema_property_id_academic_id
+    - field.field.node.refman_property_value_apid.schema_value_academic_id
+    - node.type.refman_property_value_apid
   module:
     - node
-id: node.property_value_academic_id
+id: node.refman_property_value_apid
 target_entity_type_id: node
-target_bundle: property_value_academic_id
+target_bundle: refman_property_value_apid
 schema_type: PropertyValue
 schema_properties:
   title: name

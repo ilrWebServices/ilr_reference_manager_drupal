@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.property_value_academic_id
-id: node.property_value_academic_id.title
+    - node.type.refman_property_value_apid
+id: node.refman_property_value_apid.title
 field_name: title
 entity_type: node
-bundle: property_value_academic_id
+bundle: refman_property_value_apid
 label: Name
 description: ''
 required: true

@@ -4,11 +4,11 @@ status: true
 dependencies:
   config:
     - field.storage.node.schema_value_academic_id
-    - node.type.property_value_academic_id
-id: node.property_value_academic_id.schema_value_academic_id
+    - node.type.refman_property_value_apid
+id: node.refman_property_value_apid.schema_value_academic_id
 field_name: schema_value_academic_id
 entity_type: node
-bundle: property_value_academic_id
+bundle: refman_property_value_apid
 label: Value
 description: ''
 required: true

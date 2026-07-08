@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 name: 'Academic Identifier Property Value'
-type: property_value_academic_id
+type: refman_property_value_apid
 description: 'A property-value pair, e.g. representing an Academic Identifier name and value.'
 help: null
 new_revision: true

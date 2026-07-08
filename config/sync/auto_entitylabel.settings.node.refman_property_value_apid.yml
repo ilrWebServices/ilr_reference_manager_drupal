@@ -6,5 +6,5 @@ save: false
 chunk: 50
 dependencies:
   config:
-    - node.type.property_value_academic_id
+    - node.type.refman_property_value_apid
 new_content_behavior: 0

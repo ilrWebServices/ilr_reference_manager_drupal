@@ -24,5 +24,5 @@ settings:
     excluded_schema_types: {  }
     ignore_additional_mappings: false
     target_bundles:
-      property_value_academic_id: property_value_academic_id
+      refman_property_value_apid: refman_property_value_apid
 field_type: entity_reference

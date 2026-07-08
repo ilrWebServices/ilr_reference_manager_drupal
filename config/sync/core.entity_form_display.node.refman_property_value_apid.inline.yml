@@ -4,12 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.node.inline
-    - field.field.node.property_value_academic_id.schema_property_id_academic_id
-    - field.field.node.property_value_academic_id.schema_value_academic_id
-    - node.type.property_value_academic_id
-id: node.property_value_academic_id.inline
+    - field.field.node.refman_property_value_apid.schema_property_id_academic_id
+    - field.field.node.refman_property_value_apid.schema_value_academic_id
+    - node.type.refman_property_value_apid
+id: node.refman_property_value_apid.inline
 targetEntityType: node
-bundle: property_value_academic_id
+bundle: refman_property_value_apid
 mode: inline
 content:
   schema_property_id_academic_id:
