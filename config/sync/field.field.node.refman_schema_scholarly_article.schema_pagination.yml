@@ -1,0 +1,19 @@
+uuid: 8fbe2fc4-4762-4aa5-857a-5ce543be6a24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_pagination
+    - node.type.refman_schema_scholarly_article
+id: node.refman_schema_scholarly_article.schema_pagination
+field_name: schema_pagination
+entity_type: node
+bundle: refman_schema_scholarly_article
+label: Pagination
+description: 'Any description of pages that is not separated into pageStart and pageEnd; for example, "1-6, 9, 55" or "10-12, 46-49".'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

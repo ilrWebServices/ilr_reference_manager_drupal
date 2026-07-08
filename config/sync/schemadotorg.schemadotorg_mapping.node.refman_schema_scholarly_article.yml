@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.refman_schema_scholarly_article.schema_author
     - field.field.node.refman_schema_scholarly_article.schema_date_published
     - field.field.node.refman_schema_scholarly_article.schema_is_part_of
+    - field.field.node.refman_schema_scholarly_article.schema_pagination
     - field.field.node.refman_schema_scholarly_article.schema_publisher
     - field.field.node.refman_schema_scholarly_article.schema_url
     - node.type.refman_schema_scholarly_article
@@ -20,6 +21,7 @@ schema_properties:
   schema_date_published: datePublished
   schema_is_part_of: isPartOf
   title: name
+  schema_pagination: pagination
   schema_publisher: publisher
   schema_url: url
 additional_mappings: {  }

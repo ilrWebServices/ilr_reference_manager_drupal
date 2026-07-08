@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.refman_schema_scholarly_article.schema_author
     - field.field.node.refman_schema_scholarly_article.schema_date_published
     - field.field.node.refman_schema_scholarly_article.schema_is_part_of
+    - field.field.node.refman_schema_scholarly_article.schema_pagination
     - field.field.node.refman_schema_scholarly_article.schema_publisher
     - field.field.node.refman_schema_scholarly_article.schema_url
     - node.type.refman_schema_scholarly_article
@@ -26,5 +27,6 @@ hidden:
   schema_author: true
   schema_date_published: true
   schema_is_part_of: true
+  schema_pagination: true
   schema_publisher: true
   schema_url: true

@@ -992,7 +992,6 @@ schema_properties:
     - ownershipFundingInfo
     - pageEnd
     - pageStart
-    - pagination
     - pattern
     - position
     - potentialAction
