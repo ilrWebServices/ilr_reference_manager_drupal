@@ -174,6 +174,10 @@ class FileUploadForm extends FormBase {
           }
 
           foreach ($user->INTELLCONT as $publication) {
+            if ((string) $publication->PUBLIC_VIEW !== 'Yes') {
+              continue;
+            }
+
             if ((string) $publication->CONTYPE === 'Other') {
               continue;
             }
@@ -241,7 +245,7 @@ class FileUploadForm extends FormBase {
             }
 
             $publication_date = (string) $publication->PUB_START ?: (string) $publication->SUB_START;
-            $publish_status = (string) $publication->STATUS === 'Published' && (string) $publication->PUBLIC_VIEW === 'Yes';
+            $publish_status = (string) $publication->STATUS === 'Published';
 
             /** @var \Drupal\node\NodeInterface $entity */
             $entity = $node_storage->create([
