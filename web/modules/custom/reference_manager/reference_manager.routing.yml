@@ -1,0 +1,9 @@
+reference_manager.upload_form:
+  path: '/admin/reference-manager/upload'
+  defaults:
+    _form: '\Drupal\reference_manager\Form\FileUploadForm'
+    _title: 'Upload Reference File'
+  requirements:
+    _permission: 'administer nodes'
+  options:
+    _admin_route: TRUE
