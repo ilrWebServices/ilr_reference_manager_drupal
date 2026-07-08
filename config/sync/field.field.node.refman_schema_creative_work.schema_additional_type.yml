@@ -1,0 +1,21 @@
+uuid: 69b3da38-438e-4d60-ba6c-15128865ac42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_additional_type
+    - node.type.refman_schema_creative_work
+  module:
+    - options
+id: node.refman_schema_creative_work.schema_additional_type
+field_name: schema_additional_type
+entity_type: node
+bundle: refman_schema_creative_work
+label: Type
+description: 'An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

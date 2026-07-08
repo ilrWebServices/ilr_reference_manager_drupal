@@ -1,0 +1,48 @@
+uuid: 79175bc5-5c9d-4fb9-8ab6-1448c9456757
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.schema_additional_type
+field_name: schema_additional_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: book_section
+      label: 'Book Section'
+    -
+      value: instructor_s_manual
+      label: "Instructor's Manual"
+    -
+      value: book_review
+      label: 'Book Review'
+    -
+      value: written_case
+      label: 'Written Case'
+    -
+      value: cited_research
+      label: 'Cited Research'
+    -
+      value: conference_proceeding
+      label: 'Conference Proceeding'
+    -
+      value: abstract
+      label: Abstract
+    -
+      value: research_report
+      label: 'Research Report'
+    -
+      value: research_bulletin
+      label: 'Research Bulletin'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

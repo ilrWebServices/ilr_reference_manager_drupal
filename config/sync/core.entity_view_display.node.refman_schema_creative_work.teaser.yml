@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.refman_schema_creative_work.schema_additional_type
     - field.field.node.refman_schema_creative_work.schema_author
     - field.field.node.refman_schema_creative_work.schema_date_published
     - field.field.node.refman_schema_creative_work.schema_publisher
@@ -22,6 +23,7 @@ content:
     weight: 200
     region: content
 hidden:
+  schema_additional_type: true
   schema_author: true
   schema_date_published: true
   schema_publisher: true

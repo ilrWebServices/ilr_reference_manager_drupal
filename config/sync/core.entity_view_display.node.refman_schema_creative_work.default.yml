@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.refman_schema_creative_work.schema_additional_type
     - field.field.node.refman_schema_creative_work.schema_author
     - field.field.node.refman_schema_creative_work.schema_date_published
     - field.field.node.refman_schema_creative_work.schema_publisher
@@ -11,6 +12,7 @@ dependencies:
   module:
     - datetime
     - link
+    - options
     - user
 id: node.refman_schema_creative_work.default
 targetEntityType: node
@@ -21,6 +23,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 200
+    region: content
+  schema_additional_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
     region: content
   schema_author:
     type: entity_reference_label

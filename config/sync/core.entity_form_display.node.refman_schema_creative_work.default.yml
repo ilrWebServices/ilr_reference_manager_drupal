@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.node.inline
+    - field.field.node.refman_schema_creative_work.schema_additional_type
     - field.field.node.refman_schema_creative_work.schema_author
     - field.field.node.refman_schema_creative_work.schema_date_published
     - field.field.node.refman_schema_creative_work.schema_publisher
@@ -21,6 +22,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 200
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  schema_additional_type:
+    type: options_select
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
