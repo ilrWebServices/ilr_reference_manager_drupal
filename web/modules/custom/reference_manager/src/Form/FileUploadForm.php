@@ -9,6 +9,8 @@ use Drupal\Core\File\FileSystemInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Password\PasswordGeneratorInterface;
+use Drupal\node\NodeInterface;
+use Drupal\reference_manager\PropertyValueAcademicIdentifier;
 
 /**
  * Provides a file upload form for reference manager.
@@ -295,6 +297,54 @@ class FileUploadForm extends FormBase {
 
             // Set the authors.
             $entity->set('schema_author', $authors);
+
+            // Set any academic identifiers. They are stored as a custom
+            // schema.org PropertyValues content type
+            if ($entity->hasField('schema_identifier_academic_id')) {
+              /** @var PropertyValueAcademicIdentifier[] $academic_identifier_data */
+              $academic_identifier_data = [];
+
+              /** @var NodeInterface[] $academic_identifier_nodes */
+              $academic_identifier_nodes = [];
+
+              if ((string) $publication->ARXIVNUM) {
+                $academic_identifier_data[] = new PropertyValueAcademicIdentifier('arXiv', (string) $publication->ARXIVNUM);
+              }
+
+              if ((string) $publication->DOI) {
+                // See https://stackoverflow.com/a/48524047.
+                preg_match('/10\.\d{4,9}\/[-._;()\/:A-Z0-9]+/', (string) $publication->DOI, $doi_matches);
+
+                if ($doi_matches) {
+                  $academic_identifier_data[] = new PropertyValueAcademicIdentifier('DOI', $doi_matches[0]);
+                }
+              }
+
+              if ((string) $publication->PMID) {
+                $academic_identifier_data[] = new PropertyValueAcademicIdentifier('PMID', (string) $publication->PMID);
+              }
+
+              if ((string) $publication->PMCID) {
+                $academic_identifier_data[] = new PropertyValueAcademicIdentifier('PMCID', (string) $publication->PMCID);
+              }
+
+              foreach ($academic_identifier_data as $academic_identifier) {
+                $new_academic_identifier = $node_storage->create([
+                  'type' => 'refman_property_value_apid',
+                  'schema_property_id_academic_id' => strtolower($academic_identifier->propertyId),
+                  'schema_value_academic_id' => $academic_identifier->value,
+                  'uid' => $account->id(),
+                ]);
+
+                if ($new_academic_identifier->save()) {
+                  $academic_identifier_nodes[] = $new_academic_identifier;
+                }
+              }
+
+              if ($academic_identifier_nodes) {
+                $entity->set('schema_identifier_academic_id', $academic_identifier_nodes);
+              }
+            }
 
             // Save the entity.
             $entity->save();

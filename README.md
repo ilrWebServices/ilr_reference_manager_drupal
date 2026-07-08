@@ -14,5 +14,6 @@ A web-based, central reference manager with export capabilities.
 # ISSUES
 
 - Missing JOURNAL->JOURNAL_NAME and (maybe PUBLISHER) on contributions; check with Betsy. This causes empty publisher names.
+- Missing ARXIVNUM. From data? Was it ever there?
 - Check creative work type: ok on view, but not on edit
 - Should we skip PUBLIC_VIEW = No?
