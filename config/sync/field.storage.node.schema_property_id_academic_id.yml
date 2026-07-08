@@ -1,0 +1,33 @@
+uuid: 495cf848-31cf-46e0-b6be-c2e96f7be697
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.schema_property_id_academic_id
+field_name: schema_property_id_academic_id
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: doi
+      label: DOI
+    -
+      value: arxiv
+      label: arxiv
+    -
+      value: pmid
+      label: PMID
+    -
+      value: pmcid
+      label: PMCID
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

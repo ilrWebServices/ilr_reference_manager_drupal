@@ -6,6 +6,7 @@ dependencies:
     - core.entity_form_mode.node.inline
     - field.field.node.refman_schema_scholarly_article.schema_author
     - field.field.node.refman_schema_scholarly_article.schema_date_published
+    - field.field.node.refman_schema_scholarly_article.schema_identifier_academic_id
     - field.field.node.refman_schema_scholarly_article.schema_is_part_of
     - field.field.node.refman_schema_scholarly_article.schema_pagination
     - field.field.node.refman_schema_scholarly_article.schema_publisher
@@ -44,6 +45,24 @@ content:
     weight: 111
     region: content
     settings: {  }
+    third_party_settings: {  }
+  schema_identifier_academic_id:
+    type: inline_entity_form_complex
+    weight: 165
+    region: content
+    settings:
+      form_mode: inline
+      override_labels: true
+      label_singular: Identifier
+      label_plural: Identifiers
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: true
+      removed_reference: optional
     third_party_settings: {  }
   schema_is_part_of:
     type: inline_entity_form_simple

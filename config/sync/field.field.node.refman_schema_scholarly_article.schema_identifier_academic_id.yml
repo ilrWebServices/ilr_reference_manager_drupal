@@ -1,0 +1,28 @@
+uuid: 58af2f8e-1209-43ef-9f43-b05798c8d6e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_identifier_academic_id
+    - node.type.refman_schema_scholarly_article
+id: node.refman_schema_scholarly_article.schema_identifier_academic_id
+field_name: schema_identifier_academic_id
+entity_type: node
+bundle: refman_schema_scholarly_article
+label: 'Academic Identifier'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'schemadotorg:node'
+  handler_settings:
+    target_type: node
+    schema_types:
+      PropertyValue: PropertyValue
+    excluded_schema_types: {  }
+    ignore_additional_mappings: false
+    target_bundles:
+      property_value_academic_id: property_value_academic_id
+field_type: entity_reference

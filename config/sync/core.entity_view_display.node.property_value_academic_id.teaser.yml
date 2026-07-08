@@ -1,0 +1,24 @@
+uuid: 2042c3c3-727e-4024-9ee7-bb4c8bb74707
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.property_value_academic_id.schema_property_id_academic_id
+    - field.field.node.property_value_academic_id.schema_value_academic_id
+    - node.type.property_value_academic_id
+  module:
+    - user
+id: node.property_value_academic_id.teaser
+targetEntityType: node
+bundle: property_value_academic_id
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 200
+    region: content
+hidden:
+  schema_property_id_academic_id: true
+  schema_value_academic_id: true

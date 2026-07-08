@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.refman_schema_scholarly_article.schema_author
     - field.field.node.refman_schema_scholarly_article.schema_date_published
+    - field.field.node.refman_schema_scholarly_article.schema_identifier_academic_id
     - field.field.node.refman_schema_scholarly_article.schema_is_part_of
     - field.field.node.refman_schema_scholarly_article.schema_pagination
     - field.field.node.refman_schema_scholarly_article.schema_publisher
@@ -40,6 +41,14 @@ content:
       format_type: medium
     third_party_settings: {  }
     weight: 111
+    region: content
+  schema_identifier_academic_id:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 165
     region: content
   schema_is_part_of:
     type: entity_reference_label

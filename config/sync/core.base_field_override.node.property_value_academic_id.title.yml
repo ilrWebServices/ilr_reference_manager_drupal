@@ -1,0 +1,18 @@
+uuid: 44159bb2-b286-4b66-ad2f-b6b0473a3b9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.property_value_academic_id
+id: node.property_value_academic_id.title
+field_name: title
+entity_type: node
+bundle: property_value_academic_id
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

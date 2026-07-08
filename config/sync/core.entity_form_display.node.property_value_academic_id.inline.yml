@@ -1,0 +1,35 @@
+uuid: 3e02a8ec-48fc-4547-b528-3c32a63c8083
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.inline
+    - field.field.node.property_value_academic_id.schema_property_id_academic_id
+    - field.field.node.property_value_academic_id.schema_value_academic_id
+    - node.type.property_value_academic_id
+id: node.property_value_academic_id.inline
+targetEntityType: node
+bundle: property_value_academic_id
+mode: inline
+content:
+  schema_property_id_academic_id:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  schema_value_academic_id:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  status: true
+  sticky: true
+  title: true
+  uid: true

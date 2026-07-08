@@ -1,0 +1,21 @@
+uuid: c53d5c0b-546f-4b8b-868a-e215f7a0443d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_property_id_academic_id
+    - node.type.property_value_academic_id
+  module:
+    - options
+id: node.property_value_academic_id.schema_property_id_academic_id
+field_name: schema_property_id_academic_id
+entity_type: node
+bundle: property_value_academic_id
+label: 'Identifier type'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

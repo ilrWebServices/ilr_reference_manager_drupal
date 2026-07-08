@@ -1,0 +1,61 @@
+uuid: cf64f6aa-a5a9-4ebe-b5d8-3a335b65dcd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.property_value_academic_id.schema_property_id_academic_id
+    - field.field.node.property_value_academic_id.schema_value_academic_id
+    - node.type.property_value_academic_id
+id: node.property_value_academic_id.default
+targetEntityType: node
+bundle: property_value_academic_id
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 200
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  schema_property_id_academic_id:
+    type: options_select
+    weight: 130
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  schema_value_academic_id:
+    type: string_textfield
+    weight: 42
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 220
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 200
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

@@ -1,0 +1,19 @@
+uuid: b4c21d10-36de-4624-80a4-db4d8d7f6ab9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.schema_value_academic_id
+    - node.type.property_value_academic_id
+id: node.property_value_academic_id.schema_value_academic_id
+field_name: schema_value_academic_id
+entity_type: node
+bundle: property_value_academic_id
+label: Value
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

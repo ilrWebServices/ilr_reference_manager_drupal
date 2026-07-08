@@ -1,0 +1,19 @@
+uuid: 4b2800f6-ba7e-41e7-92b0-25628abbff26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.property_value_academic_id.schema_property_id_academic_id
+    - field.field.node.property_value_academic_id.schema_value_academic_id
+    - node.type.property_value_academic_id
+  module:
+    - node
+id: node.property_value_academic_id
+target_entity_type_id: node
+target_bundle: property_value_academic_id
+schema_type: PropertyValue
+schema_properties:
+  title: name
+  schema_property_id_academic_id: propertyID
+  schema_value_academic_id: value
+additional_mappings: {  }

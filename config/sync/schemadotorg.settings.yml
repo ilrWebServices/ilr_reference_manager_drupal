@@ -977,7 +977,6 @@ schema_properties:
     - gtin8
     - hasOfferCatalog
     - homeLocation
-    - identifier
     - interactionStatistic
     - interactivityType
     - interpretedAsClaim

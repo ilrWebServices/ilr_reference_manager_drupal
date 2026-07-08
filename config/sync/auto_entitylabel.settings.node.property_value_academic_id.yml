@@ -1,0 +1,10 @@
+status: 1
+pattern: '[node:schema_property_id_academic_id]:[node:schema_value_academic_id]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.property_value_academic_id
+new_content_behavior: 0

@@ -1,0 +1,11 @@
+uuid: 401208b2-7d63-4e30-9776-5adddcac2c1f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Academic Identifier Property Value'
+type: property_value_academic_id
+description: 'A property-value pair, e.g. representing an Academic Identifier name and value.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

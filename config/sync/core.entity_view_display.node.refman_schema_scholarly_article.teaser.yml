@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.refman_schema_scholarly_article.schema_author
     - field.field.node.refman_schema_scholarly_article.schema_date_published
+    - field.field.node.refman_schema_scholarly_article.schema_identifier_academic_id
     - field.field.node.refman_schema_scholarly_article.schema_is_part_of
     - field.field.node.refman_schema_scholarly_article.schema_pagination
     - field.field.node.refman_schema_scholarly_article.schema_publisher
@@ -26,6 +27,7 @@ content:
 hidden:
   schema_author: true
   schema_date_published: true
+  schema_identifier_academic_id: true
   schema_is_part_of: true
   schema_pagination: true
   schema_publisher: true
