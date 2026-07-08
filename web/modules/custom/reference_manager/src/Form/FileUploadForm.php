@@ -209,39 +209,31 @@ class FileUploadForm extends FormBase {
             // Switch on the contribution type.
             if ((string) $publication->CONTYPE === 'Journal Article') {
               $entity_bundle = 'refman_schema_scholarly_article';
-              $publisher->setTitle((string) $publication->JOURNAL->JOURNAL_NAME ?: 'missing');
-
-              //         ->setProperty('x_arxivnum', (string) $publication->ARXIVNUM)
-              //         ->setProperty('x_doi', $doi)
-              //         ->setProperty('x_pmid', (string) $publication->PMID)
-              //         ->setProperty('x_pmcid', (string) $publication->PMCID);
-
-              // $entity;
-
+              $publisher->setTitle((string) $publication->JOURNAL->JOURNAL_NAME);
             }
             elseif ((string) $publication->CONTYPE === 'Book, Scholarly' || (string) $publication->CONTYPE === 'Book, Textbook') {
               $entity_bundle = 'refman_schema_book';
-              $publisher->setTitle((string) $publication->PUBLISHER ?: 'missing');
+              $publisher->setTitle((string) $publication->PUBLISHER);
             }
             elseif ((string) $publication->CONTYPE === 'Book Chapter') {
               $entity_bundle = 'refman_schema_chapter';
-              $publisher->setTitle((string) $publication->PUBLISHER ?: 'missing');
+              $publisher->setTitle((string) $publication->PUBLISHER);
 
             }
             elseif ((string) $publication->CONTYPE === 'Newspaper') {
               $entity_bundle = 'refman_schema_news_article';
-              $publisher->setTitle((string) $publication->PUBLISHER ?: 'missing');
+              $publisher->setTitle((string) $publication->PUBLISHER);
 
             }
             elseif ((string) $publication->CONTYPE === 'Magazine Publication') {
               $entity_bundle = 'refman_schema_article';
-              $publisher->setTitle((string) $publication->PUBLISHER ?: 'missing');
+              $publisher->setTitle((string) $publication->PUBLISHER);
 
             }
             else {
               // Plain old CreativeWork, which is the default.
               $entity_bundle = 'refman_schema_creative_work';
-              $publisher->setTitle((string) $publication->PUBLISHER ?: 'missing');
+              $publisher->setTitle((string) $publication->PUBLISHER);
             }
 
             $publication_date = (string) $publication->PUB_START ?: (string) $publication->SUB_START;
