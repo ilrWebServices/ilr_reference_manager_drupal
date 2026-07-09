@@ -24,6 +24,7 @@ module:
   path_alias: 0
   reference_manager: 0
   schemadotorg: 0
+  schemadotorg_jsonld: 0
   schemadotorg_node: 0
   schemadotorg_ui: 0
   sqlite: 0
