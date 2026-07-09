@@ -112,6 +112,9 @@ schema_type_entity_references_display:
   node--Thing: url
   node--Intangible: entity
   node--Place: entity
+  node--Person: entity
+  node--PublicationIssue: entity
+  node--PublicationVolume: entity
   taxonomy_term: entity
   Intangible: entity
 exclude_url:
