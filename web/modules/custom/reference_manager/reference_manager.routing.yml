@@ -1,3 +1,14 @@
+reference_manager.references:
+  path: '/references/{user}'
+  defaults:
+    _controller: '\Drupal\reference_manager\Controller\UserReferences::content'
+  options:
+    parameters:
+      user:
+        type: 'user_by_username'
+  requirements:
+    _access: 'TRUE'
+
 reference_manager.upload_form:
   path: '/admin/reference-manager/upload'
   defaults:
