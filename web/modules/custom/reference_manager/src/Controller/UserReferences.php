@@ -20,23 +20,22 @@ class UserReferences extends ControllerBase {
   ) {}
 
   /**
-   * Returns a renderable array for a test page.
+   * Returns JSON-LD of references for a given user.
    */
   public function content(UserInterface $user): JsonResponse {
     $data = [];
     $node_storage = $this->entityTypeManager()->getStorage('node');
+    $node_type_storage = $this->entityTypeManager()->getStorage('node_type');
+
+    $node_types_to_exclude = $node_type_storage->getQuery()
+      ->condition('third_party_settings.reference_manager.refman_ignore_node_bundle', 1)
+      ->execute();
 
     $query = $node_storage->getQuery()
       ->accessCheck(FALSE)
       ->condition('uid', $user->id())
-      ->condition('status', 1)
-      // TODO: Make a third-party setting on content types to set them as excluded (from here but also listings).
-      ->condition('type', [
-        'refman_schema_organization',
-        'refman_schema_person',
-        'refman_schema_publication_issue',
-        'refman_schema_publication_volume',
-      ], 'NOT IN');
+      ->condition('type', $node_types_to_exclude, 'NOT IN')
+      ->condition('status', 1);
 
     $nids = $query->execute();
     $nodes = $node_storage->loadMultiple($nids);

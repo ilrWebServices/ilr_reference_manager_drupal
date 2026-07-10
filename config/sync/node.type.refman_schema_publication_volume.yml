@@ -1,7 +1,12 @@
 uuid: fa68755c-c10b-4dca-b35b-450eb9ba3e7e
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - reference_manager
+third_party_settings:
+  reference_manager:
+    refman_ignore_node_bundle: 1
 name: 'Publication Volume'
 type: refman_schema_publication_volume
 description: 'A part of a successively published publication such as a periodical or multi-volume work, often numbered. It may represent a time span, such as a year.'

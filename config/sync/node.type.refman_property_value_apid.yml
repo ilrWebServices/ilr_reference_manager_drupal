@@ -1,7 +1,12 @@
 uuid: 401208b2-7d63-4e30-9776-5adddcac2c1f
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - reference_manager
+third_party_settings:
+  reference_manager:
+    refman_ignore_node_bundle: 1
 name: 'Academic Identifier Property Value'
 type: refman_property_value_apid
 description: 'A property-value pair, e.g. representing an Academic Identifier name and value.'

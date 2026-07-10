@@ -1,7 +1,12 @@
 uuid: 43e63682-81b1-4dca-a8cc-a82274456452
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - reference_manager
+third_party_settings:
+  reference_manager:
+    refman_ignore_node_bundle: 1
 name: Person
 type: refman_schema_person
 description: 'A Person.'

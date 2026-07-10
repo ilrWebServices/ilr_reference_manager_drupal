@@ -1,7 +1,12 @@
 uuid: 6c75c7f5-7e22-46dc-a72d-e0365056a37e
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - reference_manager
+third_party_settings:
+  reference_manager:
+    refman_ignore_node_bundle: 1
 name: Organization
 type: refman_schema_organization
 description: 'An organization such as a school, NGO, corporation, club, etc.'

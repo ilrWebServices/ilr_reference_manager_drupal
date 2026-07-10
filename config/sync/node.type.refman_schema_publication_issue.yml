@@ -1,7 +1,12 @@
 uuid: 219a3bac-18a2-4a32-a060-c80ab0e3f3cf
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - reference_manager
+third_party_settings:
+  reference_manager:
+    refman_ignore_node_bundle: 1
 name: 'Publication Issue'
 type: refman_schema_publication_issue
 description: 'A part of a successively published publication such as a periodical or publication volume, often numbered, usually containing a grouping of works such as articles.'
