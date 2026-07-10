@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.refman_property_value_apid
     - node.type.refman_schema_article
     - node.type.refman_schema_book
     - node.type.refman_schema_chapter
@@ -26,6 +27,7 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access navigation'
+  - 'create refman_property_value_apid content'
   - 'create refman_schema_article content'
   - 'create refman_schema_book content'
   - 'create refman_schema_chapter content'
@@ -36,6 +38,7 @@ permissions:
   - 'create refman_schema_publication_issue content'
   - 'create refman_schema_publication_volume content'
   - 'create refman_schema_scholarly_article content'
+  - 'delete own refman_property_value_apid content'
   - 'delete own refman_schema_article content'
   - 'delete own refman_schema_book content'
   - 'delete own refman_schema_chapter content'
@@ -46,6 +49,7 @@ permissions:
   - 'delete own refman_schema_publication_issue content'
   - 'delete own refman_schema_publication_volume content'
   - 'delete own refman_schema_scholarly_article content'
+  - 'edit own refman_property_value_apid content'
   - 'edit own refman_schema_article content'
   - 'edit own refman_schema_book content'
   - 'edit own refman_schema_chapter content'
