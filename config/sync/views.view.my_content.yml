@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.refman_property_value_apid
     - node.type.refman_schema_article
     - node.type.refman_schema_book
     - node.type.refman_schema_chapter
@@ -600,6 +601,7 @@ display:
           plugin_id: bundle
           operator: 'not in'
           value:
+            refman_property_value_apid: refman_property_value_apid
             refman_schema_organization: refman_schema_organization
             refman_schema_person: refman_schema_person
             refman_schema_publication_issue: refman_schema_publication_issue
