@@ -2,4 +2,4 @@ name: 'Reference Manager'
 type: module
 description: 'Reference Manager'
 package: Custom
-core_version_requirement: ^11.1
+core_version_requirement: ^11.4

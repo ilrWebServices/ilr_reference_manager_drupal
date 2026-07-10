@@ -4,10 +4,12 @@ namespace Drupal\reference_manager\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Render\BubbleableMetadata;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
 use Drupal\user\UserInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Drupal\schemadotorg_jsonld\SchemaDotOrgJsonLdBuilderInterface;
 use Drupal\schemadotorg_jsonld\SchemaDotOrgJsonLdManagerInterface;
+use Symfony\Component\Routing\Attribute\Route;
 
 /**
  * The UserReferences controller.
@@ -22,6 +24,13 @@ class UserReferences extends ControllerBase {
   /**
    * Returns JSON-LD of references for a given user.
    */
+  #[Route(
+    path: '/references/{user}',
+    name: 'reference_manager.references',
+    requirements: ['_access' => 'TRUE'],
+    options: ['parameters' => ['user' => ['type' => 'user_by_username']]],
+    defaults: ['_title' => new TranslatableMarkup('Unauthorized')]
+  )]
   public function content(UserInterface $user): JsonResponse {
     $data = [];
     $node_storage = $this->entityTypeManager()->getStorage('node');
