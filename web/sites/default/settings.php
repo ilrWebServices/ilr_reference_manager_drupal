@@ -499,6 +499,15 @@ $settings['update_free_access'] = TRUE;
 # $settings['file_assets_path'] = 'sites/default/files';
 
 /**
+ * Asset aggregate garbage collection threshold.
+ *
+ * During cache clears, JavaScript and CSS aggregates older than this threshold
+ * will be deleted. Set this to 0 to immediately delete all files, e.g. during
+ * development.
+ */
+# $settings['aggregate_gc_threshold'] = 86400 * 45;
+
+/**
  * Public file base URL:
  *
  * An alternative base URL to be used for serving public files. This must
@@ -705,6 +714,24 @@ $settings['update_free_access'] = TRUE;
 # $config['user.settings']['anonymous'] = 'Visitor';
 
 /**
+ * Enable HTML5 form validation.
+ *
+ * Drupal 12 will disable HTML5 form validation by default due to issues with
+ * usability and accessibility.  Setting this to TRUE will allow user agents to
+ * continue performing client-side HTML5 validation. This prevents Drupal's
+ * Form API (FAPI) validation from executing, so FAPI validation error messages
+ * may not be displayed including those for required elements.
+ *
+ * Setting this to FALSE will cause HTML5 validation to be disabled on all
+ * forms. Only Drupal's server-side validation will be executed.
+ *
+ * This setting will be removed in Drupal 13.
+ *
+ * @see https://www.drupal.org/node/3537128
+ */
+# $settings['enable_html5_validation'] = TRUE;
+
+/**
  * Load services definition file.
  */
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
@@ -849,6 +876,23 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # $settings['migrate_file_private_path'] = '';
 
 /**
+ * Media oEmbed discovery trusted host configuration.
+ *
+ * The oEmbed spec allows for provider/resource discovery by fetching a URL. The
+ * patterns here restrict which domains Drupal will make a request to for oEmbed
+ * discovery.
+ *
+ * For example:
+ * @code
+ * $settings['media_oembed_discovery_trusted_host_patterns'] = [
+ *   '^www\.example\.com$',
+ * ];
+ * @endcode
+ * will allow the site to make oEmbed discovery requests to www.example.com.
+ */
+# $settings['media_oembed_discovery_trusted_host_patterns'] = [];
+
+/**
  * Load local development override configuration, if available.
  *
  * Create a settings.local.php file to override variables on secondary (staging,
@@ -865,17 +909,3 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-$databases['default']['default'] = array (
-  'database' => '../data/rms.sqlite',
-  'prefix' => '',
-  'driver' => 'sqlite',
-  'namespace' => 'Drupal\\sqlite\\Driver\\Database\\sqlite',
-  'autoload' => 'core/modules/sqlite/src/Driver/Database/sqlite/',
-);
-$databases['default']['default'] = array (
-  'database' => '../data/rms.sqlite',
-  'prefix' => '',
-  'driver' => 'sqlite',
-  'namespace' => 'Drupal\\sqlite\\Driver\\Database\\sqlite',
-  'autoload' => 'core/modules/sqlite/src/Driver/Database/sqlite/',
-);
