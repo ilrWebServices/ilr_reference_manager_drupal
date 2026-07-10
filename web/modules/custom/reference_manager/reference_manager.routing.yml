@@ -7,3 +7,12 @@ reference_manager.upload_form:
     _permission: 'administer nodes'
   options:
     _admin_route: TRUE
+
+reference_manager.user_upload_form:
+  path: '/user/{user}/upload'
+  defaults:
+    _form: '\Drupal\reference_manager\Form\UserUploadForm'
+    _title: 'Upload references'
+  requirements:
+    # _permission: 'view own unpublished content'
+    _role: 'authenticated'
