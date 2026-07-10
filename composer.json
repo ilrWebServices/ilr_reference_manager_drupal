@@ -25,7 +25,8 @@
         "drupal/inline_entity_form": "^3.0@RC",
         "drupal/schemadotorg": "^1.0@alpha",
         "drupal/token": "^1.17",
-        "drush/drush": "^13"
+        "drush/drush": "^13",
+        "renanbr/bibtex-parser": "^2.3"
     },
     "conflict": {
         "drupal/drupal": "*"
